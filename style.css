@@ -72,10 +72,7 @@ p{
     gap: 0.9375rem;
 }
 
-.social-icon path:hover{
 
-fill: var(--Soft-Magenta);
-}
 
 @media(max-width:50rem){
    body{
