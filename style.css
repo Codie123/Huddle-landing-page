@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --dark-violet:hsl(255, 29%, 33%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --blue:hsl(228, 45%, 44%);
+    --white:hsl(0, 0%, 100%);
+    --font-custom:'Poppins', sans-serif;
+    --font-default:'Open Sans', sans-serif;
+}
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: auto;
+    background: url(./images/bg-desktop.svg);
+    background-color: var(--Violet);
+    font-family: var(--font-default);
+    font-weight: 400;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    }
+h1{
+    color: var(--white);
+    padding-right: 5.0625rem;
+    font-size: 2.5em;   
+    font-family: var(--font-custom);
+}
+p{
+    
+    padding-right: 6.9375rem;
+    color: var(--white);
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 1.6;
+}
+.main-container{
+    padding: 3.125rem 2.5rem ;
+}
+.logo{
+    padding: 1.875rem 0.625rem 1.875rem 3.125rem ;
+    
+}
+.flex-cont{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+.btn{
+    border: none;
+    border-radius: 1.9375rem;
+    padding: 1.125rem 4.375rem;
+    font-size: 1.125rem;
+    color: var(--Violet);
+    box-shadow: 0px 0.5rem 0.9375rem 0.0625rem var(--dark-violet);
+}
+.btn:hover{
+    background-color:var(--Soft-Magenta);
+    color: var(--white);
+}
+.social-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.9375rem;
+}
+
+.social-icon path:hover{
+
+fill: var(--Soft-Magenta);
+}
+
+@media(max-width:50rem){
+   body{
+       height: auto;
+
+       background-image: url(./images/bg-mobile.svg);
+       background-repeat: no-repeat;
+       background-size: contain;
+   }
+   .logo{
+       width: 50%;
+   }
+    .flex-cont{
+        display: inherit;
+        flex-direction: column;
+    }
+    .flex-I img{
+        width: 100%;
+    }
+    .flex-II{
+        text-align: center;
+
+    }
+    h1{
+        font-size: 2rem;
+        padding: 0;
+    }
+    p{
+        padding: 0;
+        margin-bottom: 1.875rem;
+    }
+    .btn{
+        padding: 1rem 5.9375rem;
+        margin-bottom: 1.875rem;
+    }
+    .social-icon{
+        display:flex;
+        justify-content: center;
+        margin-top: 1.875rem;
+    }
+}
+/* footer */
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+  }
+  .attribution a {
+    color: var(--blue);
+  }
